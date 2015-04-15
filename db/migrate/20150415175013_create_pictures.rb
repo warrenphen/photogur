@@ -1,8 +1,3 @@
-class PicturesController < ApplicationController
-	def index
-	end
-end
-
 class CreatePictures < ActiveRecord::Migration
   def change
     create_table :pictures do |t|
@@ -10,7 +5,7 @@ class CreatePictures < ActiveRecord::Migration
       t.string :title
       t.string :url
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
